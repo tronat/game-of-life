@@ -73,6 +73,15 @@
                 </executions>
             </plugin>
             <!-- CODE COVERAGE -->
+	    <plugin>
+		<artifactId>maven-clover-plugin</artifactId>
+		<configuration>
+		    <licenseLocation>${clover.license.file}</licenseLocation>
+		    <generateHtml>true</generateHtml>
+                    <generateXml>true</generateXml>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
